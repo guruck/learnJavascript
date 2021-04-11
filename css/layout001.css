@@ -1,0 +1,10 @@
+textarea.code {
+  width: 600px;
+  height: 100px;
+  resize: none;
+  background-color: beige;
+}
+
+itemBlue {
+  color: mediumblue;
+}

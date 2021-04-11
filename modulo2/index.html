@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina inicial</title>
+    <link rel="stylesheet" href="../css/layout001.css" />
+    <!-- Inserir JS caso haja necessidade de carregar o script antes do conteudo da pagina 
+    Ver uso do DEFER nas considerações no final da pagina -->
+    <script src="../js/script201.js" defer></script>
+  </head>
+  <body>
+    <h1>Bem Vindo!</h1>
+    <p>
+      O trecho refere-se ao uso de elementos para manipula&ccedil;&atilde;o via
+      console do navegador.
+      <br />
+      <textarea name="code001" class="code" readonly>
+
+        var dia = new Date();
+        document.body.innerHTML = "<h2>Hoje é " + dia.getDay() + "/" +  dia.getMonth() + "/" +  dia.getFullYear() + " </h2>"
+      </textarea>
+    </p>
+    <div id="conteudoScript001"></div>
+    <h3>Boas praticas</h3>
+    <p>
+      Vari&aacute;veis iniciam com letra min&uacute;scula<br />
+      <itemBlue>var greenDuck;</itemBlue><br />
+      Objetos e Classes come&ccedil;am com letra Mai&uacute;scula<br />
+      <itemBlue>var date = new Date();</itemBlue><br />
+      Constantes todos os caracteres Mai&uacute;scula<br />
+      <itemBlue>const AUXILIAR = 10;</itemBlue>
+    </p>
+    <a href="../modulo3/mod301.html">Modulo 03</a>
+    <!-- Inserir JS caso haja necessidade de carregar o script durante do conteudo da pagina -->
+  </body>
+  <!-- Inserir JS caso haja necessidade de carregar o script após do conteudo da pagina -->
+  <!-- <script>
+    var dia = new Date();
+    document.body.innerHTML =
+      '<h2>Hoje é ' +
+      dia.getDate() + //.getDay() +
+      '/' +
+      dia.getMonth() +
+      '/' +
+      dia.getFullYear() +
+      ' </h2>';
+  </script> -->
+  <!-- 
+    <script src="../js/script201.js"></script>
+    sem parametro => arquivo é baixado e executado o script de forma posicional.
+    <script src="../js/script201.js" async></script>
+    async => arquivo é baixado e só aparece o bloqueio quando é executado o script.
+    <script src="../js/script201.js" defer></script>
+    defer => adia o carregamento e execução do script até que todo restante tiver carregado.
+  -->
+</html>
