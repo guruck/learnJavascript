@@ -8,3 +8,8 @@ textarea.code {
 itemBlue {
   color: mediumblue;
 }
+
+img.imgMed {
+  width: 400px;
+  height: 200px;
+}
